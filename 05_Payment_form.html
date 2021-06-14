@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="index.html">
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>Name*: <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Sex*</legend>
+            <p>
+                Male: <input type="radio" name="Sex" id="Male">
+                Female: <input type="radio" name="Sex" id="Female">
+                Other: <input type="radio" name="Sex" id="Other">
+            </p>
+        </fieldset>
+        <p>Address*:
+            <textarea name="Address" id="Address" cols="30" rows="10" required></textarea>
+        </p>
+        <p>E-mail*: <input type="email" name="email" required></p>
+        <p>Pincode*: <input type="number" name="Pincode" id="Pincode" required></p>
+        <h2>Payment Information</h2>
+        <p>
+            Card Type*:
+            <select name="card_type" id="card_type">
+                <option value="">--Select a card type--</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Rupay">Rupay</option>
+            </select>
+        </p>
+        <p>Card Number*: <input type="number" name="Card_number" id="Card_number" required></p>
+        <p>Expiry Date*: <input type="date" name="exp_date" id="exp_date" required></p>
+        <p>CVV*: <input type="password" name="CVV" id="CVV" required ></p>
+        <input type="Submit" name="Pay Now" id="">
+        <p>* Required fields can not be left empty</p>
+    </form>
+</body>
+</html>
